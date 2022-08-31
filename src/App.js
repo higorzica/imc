@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './app.css';
 import swal from 'sweetalert';
 
+
 export default function App() {
   const [peso,setPeso] = useState('');
   const [altura,setAltura] = useState('');
@@ -31,8 +32,11 @@ export default function App() {
 
   return(
     <div className="app">
+      <div className='brilho'>
       <h1>Calculadora IMC</h1>
       <span>Vamos calcular seu imc </span>
+      </div>
+
 
       <div className="area-input">
         <input type="text" placeholder="Peso em (kg) Ex:90 kg"
